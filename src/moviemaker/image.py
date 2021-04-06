@@ -6,6 +6,10 @@ import os
 
 
 
+__all__=["Image","ImageIterator"]
+
+
+
 class Image:
 	def __init__(self,src):
 		self.src=os.path.abspath(src)
@@ -158,7 +162,7 @@ class Image:
 		return {"type":"image","src":self.src,"effects":{"length":self.properties.length,"pan":self.properties.pan,"pan_size":{"w":self.properties.pan_size[0],"h":self.properties.pan_size[1]},"fps":self.properties.fps,"scale":self.properties.scale}}
 
 
-		
+
 	@staticmethod
 	def list(d,c=lambda f:True):
 		return [os.path.abspath(os.path.join(d,f)) for f in os.listdir(d) if f[len(f)-4:] in Image.valid_formats() and c(f)]

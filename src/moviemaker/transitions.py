@@ -3,6 +3,10 @@ import numpy as np
 
 
 
+__all__=["Transition"]
+
+
+
 class _Transition:
 	def __init__(self,type_,null_frame_c):
 		self.t=type_

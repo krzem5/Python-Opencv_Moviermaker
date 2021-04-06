@@ -4,6 +4,10 @@ import os
 
 
 
+__all__=["Video","VideoIterator"]
+
+
+
 class Video:
 	def __init__(self,src):
 		self.src=os.path.abspath(src)

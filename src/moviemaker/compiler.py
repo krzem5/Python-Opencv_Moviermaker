@@ -8,6 +8,10 @@ import os
 
 
 
+__all__=["Compiler"]
+
+
+
 class Compiler:
 	def __init__(self):
 		self.arr=ElementList()
