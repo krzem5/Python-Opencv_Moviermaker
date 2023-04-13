@@ -11,6 +11,7 @@ class AttrDict(dict):
 		del self[i]
 
 
+
 	@staticmethod
 	def convert(d):
 		nd=AttrDict(d)
